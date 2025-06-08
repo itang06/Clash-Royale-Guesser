@@ -1,0 +1,37 @@
+<%- include("partials/header") %>
+<div id="guessingbox" class="container d-flex align-items-center justify-content-center">
+  <div class="row p-5 text-center rounded-4">
+    <div class="col-12 mx-auto">
+      <div id="logobox" class="d-flex align-items-center justify-content-center">
+        <h1 class="title m-0">Guess the</h1>
+        <img id="logo" src="/images/Clash_Royale_Logo.png">
+        <h1 class="title m-0">Card!</h1>
+      </div>
+      <img id="card" src="<%=card.iconUrls.medium%>" width="300">
+
+      <form action="/guess" method="post">
+        <input id="guess" class="border border-black border-3" type="text" name="guess" placeholder="Enter Card Name!" autocomplete="off" autofocus>
+        <button type="submit" id="guessButton" class="border border-3 border-black">Guess!</button>
+      </form>
+      
+      <%if (locals.feedback) {%>
+        <div id="feedback" class="px-3 mx-auto d-inline-block border border-black border-4 mt-3">
+          <p class="mt-4"><%=feedback%></p>
+        </div>
+      <%}%>
+      <div id="scores" class="p-3 mx-auto border border-black border-4 mt-3">
+        <h1 id="currentScore"><span>Score: </span><%=currentScore%></h1>
+        <h1 id="highscore"><span>Highscore: </span><%=highscore%></h1>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<form action="/logout" method="post">
+  <button type="submit" id="logout" class="position-absolute button btn btn-danger border border-danger border-4">Log Out</button>
+</form>
+<form action="/leaderboard" method="get">
+  <input type="image" src="images/leaderboard.png" id="leaderboard" class="position-absolute"></input>
+</form>
+<%- include("partials/footer") %>

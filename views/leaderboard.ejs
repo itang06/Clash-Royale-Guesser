@@ -1,0 +1,49 @@
+<%- include("partials/header") %>
+<form action="/guess" method="get">
+    <button type="submit" id="back2" class="btn btn-light position-absolute"><--------</button>
+</form>
+<form action="/logout" method="post">
+    <button type="submit" id="logout2" class="position-absolute button btn btn-danger border border-danger border-4">Log Out</button>
+</form>
+<div id="leaderboard-title" class="d-flex align-items-center justify-content-center mt-5">
+    <h1>Leaderboard</h1>
+</div>
+<div class="container justify-content-center mt-5">
+    <% for (let i = 0; i < leaderboard.length; i++) { %>
+  
+      <% if (i === 0) { %>
+        <div class="position-relative">
+          <img src="/images/Blue Crown.png" class="position-absolute crown">
+  
+          <div class="leaderboard-card row text-muted my-2 px-3 py-2">
+            <div class="col-12 d-flex align-items-center">
+              <img src="/images/<%= i %>_leaderboard.png" class="me-4">
+              <div>
+                <p class="mb-1"><%= leaderboard[i].username %></p>
+                <p class="mb-0">Highscore: <%= leaderboard[i].highscore %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      <% } else { %>
+        <div class="leaderboard-card row text-muted my-2 px-3 py-2">
+          <div class="col-12 d-flex align-items-center">
+            <% if (i < 3) { %>
+              <img src="/images/<%= i %>_leaderboard.png" class="me-4">
+            <% } else { %>
+              <div id="leaderboard-number" class="me-4 d-flex align-items-center justify-content-center mb-3 mt-4">
+                <h1><%= i + 1 %>.</h1>
+              </div>
+            <% } %>
+            <div>
+              <p class="mb-1"><%= leaderboard[i].username %></p>
+              <p class="mb-0">Highscore: <%= leaderboard[i].highscore %></p>
+            </div>
+          </div>
+        </div>
+      <% } %>
+  
+    <% } %>
+  </div>
+<%- include("partials/footer") %>
