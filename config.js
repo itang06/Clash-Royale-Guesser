@@ -6,7 +6,7 @@ export const CONFIG = {
   API_LIMITS: {
     POKEMON_MAX: 17000,
     BRAWL_STARS_MAX: 92,
-    CLASH_ROYALE_MAX: 119
+    CLASH_ROYALE_MAX: 121
   }
 };
 

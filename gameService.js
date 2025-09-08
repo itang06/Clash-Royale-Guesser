@@ -38,3 +38,4 @@ export async function getLeaderboard(limit = 9) {
   }
 }
 
+
