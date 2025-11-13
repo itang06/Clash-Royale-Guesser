@@ -8,7 +8,7 @@ I grew up grinding Clash Royale and always loved how instantly recognizable the 
 - real user accounts and scores with a persistent database
 - a live leaderboard that friends can actually compete on
 - integrating an external API (Clash Royale) in a way that still works in a hosted environment
-- my first time building a full-stack from scratch
+- my first time building and deploying a full-stack app from scratch
 
 It also doubled as a playground for deployment—figuring out how to keep API keys secure, handle a production database, and still ship something fun.
 
@@ -125,3 +125,4 @@ Visit [http://localhost:3000](http://localhost:3000) and you’ll land on the lo
 
 ## License
 ISC License
+
