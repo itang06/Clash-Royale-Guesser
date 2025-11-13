@@ -27,7 +27,7 @@ It also doubled as a playground for deployment to figure out how to keep API key
 - **External Data:** Card images and metadata pulled from the Clash Royale API via the RoyaleAPI proxy (so the app keeps a stable IP address).
 
 ```
-└── Project1/
+└── RoyaleGuesser/
     ├── public/           # Fonts, images, and CSS
     ├── views/            # EJS templates (pages + shared partials)
     ├── apiService.js     # Clash Royale API client
