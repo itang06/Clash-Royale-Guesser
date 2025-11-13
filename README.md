@@ -12,15 +12,6 @@ I grew up grinding Clash Royale and always loved how instantly recognizable the 
 
 It also doubled as a playground for deployment—figuring out how to keep API keys secure, handle a production database, and still ship something fun.
 
-## What It Looks Like
-![Gameplay mock](public/images/Clash_Royale_Logo.png)
-*The main game screen highlights a card image and the guess form.*
-
-![Leaderboard mock](public/images/leaderboard.png)
-*The leaderboard showcases the top scorers and crowns the current champion.*
-
-> These assets mirror what users see in the app. Replace or extend with real screenshots if you capture them later.
-
 ## Feature Highlights
 - **Fast Onboarding:** Lightweight registration and login with password hashing.
 - **Instant Feedback:** Guess results update your score and show the correct answer when you miss.
@@ -125,4 +116,5 @@ Visit [http://localhost:3000](http://localhost:3000) and you’ll land on the lo
 
 ## License
 ISC License
+
 
