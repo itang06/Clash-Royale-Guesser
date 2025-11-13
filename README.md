@@ -114,7 +114,5 @@ Visit [http://localhost:3000](http://localhost:3000) and you’ll land on the lo
 - **Testing:** No automated tests have been written; integration tests for auth and gameplay are on the roadmap.
 - **Card Pool Expansion:** Right now it pulls from the default Clash Royale card list; adding filters (rarity, arena) would be a neat enhancement.
 
-## License
-ISC License
 
 
