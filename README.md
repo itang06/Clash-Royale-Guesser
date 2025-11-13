@@ -8,9 +8,9 @@ I grew up grinding Clash Royale and always loved how instantly recognizable the 
 - real user accounts and scores with a persistent database
 - a live leaderboard that friends can actually compete on
 - integrating an external API (Clash Royale) in a way that still works in a hosted environment
-- my first time building and deploying a full-stack app from scratch
+- my first time building a full-stack app from scratch
 
-It also doubled as a playground for deployment—figuring out how to keep API keys secure, handle a production database, and still ship something fun.
+It also doubled as a playground for deployment to figure out how to keep API keys secure, handle a production database, and still ship something fun.
 
 ## Feature Highlights
 - **Fast Onboarding:** Lightweight registration and login with password hashing.
@@ -103,16 +103,17 @@ Visit [http://localhost:3000](http://localhost:3000) and you’ll land on the lo
 
 ## Gameplay Flow
 1. **Create an Account:** Quick form; credentials stored securely.
-2. **Start Guessing:** Each round shows a card image—type your best guess.
+2. **Start Guessing:** Each round shows a card image, so type your best guess.
 3. **Score Updates:** Correct answers bump your session score; miss and you restart from zero (but see what you missed).
 4. **Leaderboard:** Jump to the leaderboard to view top players and your own high score.
 
 ## Known Issues & TODO
 - **Session Store:** Currently uses Express’s in-memory store. Needs Redis or another persistent store for a production-grade deployment.
-- **Mobile Layout:** Works on mobile but some spacing could be tighter—needs responsive polish.
+- **Mobile Layout:** Works on mobile but some spacing could be tighter and needs more responsive polish.
 - **Rate Limiting:** API requests aren’t throttled yet. Add guards if opening to public traffic.
 - **Testing:** No automated tests have been written; integration tests for auth and gameplay are on the roadmap.
 - **Card Pool Expansion:** Right now it pulls from the default Clash Royale card list; adding filters (rarity, arena) would be a neat enhancement.
+
 
 
 
