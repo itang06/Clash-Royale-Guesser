@@ -113,7 +113,6 @@ The application configuration can be modified in `config.js`:
 - **SALT_ROUNDS**: bcrypt salt rounds for password hashing
 - **SESSION_MAX_AGE**: Session duration in milliseconds
 - **LEADERBOARD_LIMIT**: Number of players shown on leaderboard
-- **API_LIMITS**: Maximum card IDs for different game APIs
 
 ## Development
 
